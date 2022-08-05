@@ -1,22 +1,26 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Location from "./Components/Location";
+import Error from "./Components/Error";
+import Gallery from "./Components/Gallery";
+import Delivery from "./Components/Delivery";
+import Contacts from "./Components/Contacts";
+import HomePage from "./Components/HomePage";
 
-const App = () => {
+function App() {
     return (
-        <BrowserRouter>
+        <div className="app">
+            <Navbar />
             <Routes>
-                <Route path='/' element={
-                    <div>
-                        <h1>Landing page</h1>
-                    </div>
-                }/>
-                <Route path='test' element={
-                    <div>
-                        <h1>Location</h1>
-                    </div>
-                }/>
+                <Route exact path='/' element={<HomePage />}/>
+                <Route path='/Location' element={<Location />}/>
+                <Route path='/Gallery' element={<Gallery />}/>
+                <Route path='/Delivery' element={<Delivery />}/>
+                <Route path='/Contacts' element={<Contacts />}/>
+                <Route path='*' element={<Error />} />
             </Routes> 
-        </BrowserRouter>
+        </div>
     );
 };
 
