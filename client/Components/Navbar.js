@@ -15,6 +15,7 @@ function Navbar() {
                 <Link className="nav_link" to='/Delivery'><h3>Delivery</h3></Link>
                 <Link className="nav_link" to='/Location'><h3>Location</h3></Link>
                 <Link className="nav_link" to='/Contacts'><h3>Contacts</h3></Link>
+                <Link className="nav_link" to='/Login_Signup'><h3>Login / Sign up</h3></Link>
             </div>
         </div>
     );

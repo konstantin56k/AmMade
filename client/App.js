@@ -7,6 +7,7 @@ import Gallery from "./Components/Gallery";
 import Delivery from "./Components/Delivery";
 import Contacts from "./Components/Contacts";
 import HomePage from "./Components/HomePage";
+import Login from "./Components/Login";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/Gallery' element={<Gallery />}/>
                 <Route path='/Delivery' element={<Delivery />}/>
                 <Route path='/Contacts' element={<Contacts />}/>
+                <Route path='Login_Signup' element={<Login />} />
                 <Route path='*' element={<Error />} />
             </Routes> 
         </div>

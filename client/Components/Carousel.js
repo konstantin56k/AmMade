@@ -8,14 +8,13 @@ const vendorImages = [amanaBanner, hafeleBanner, richelieuBanner]
 
 function Carousel() {
 
-    const [currentImgIdx, setCurrentImgIdx] = useState(0)
+    const [currentImgIdx, setCurrentImgIdx] = useState(2)
 
     return (
         <div className="carousel">
-            <div className="carouselInner"
-                style={{backgroundImage: `url(${amanaBanner})`}}
+            <div className="carousel_inner"
+                style={{backgroundImage: `url(${vendorImages[currentImgIdx]})`}}
             >
-
             </div>
         </div>
     );
