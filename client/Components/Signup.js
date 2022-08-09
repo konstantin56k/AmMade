@@ -1,22 +1,20 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
-
-function Login() {
+function Signup() {
     return (
         <div className='login'>
             <form className='login-form'>
                 <input className='login-form-element' placeholder='user@mail.com'></input>
                 <input className='login-form-element' placeholder='password'></input>
-                <button className='login-form-element' type="submit">Login</button>
+                <button className='login-form-element' type="submit">Sign up</button>
             </form>
             <div className='signup'>
                 <h3>or</h3>
-                <Link className='signup-link' to='/Signup'>Sign up</Link>
+                <Link className='login-link' to='/Login'>Login</Link>
             </div>
         </div>
     )
 }
 
-
-export default Login;
+export default Signup;
