@@ -9,4 +9,3 @@ root.render(
         <App />
     </BrowserRouter>   
 );
-console.log("%cLog Message", "color: orange")

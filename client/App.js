@@ -16,12 +16,12 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path='/' element={<HomePage />}/>
-                <Route path='/Location' element={<Location />}/>
-                <Route path='/Gallery' element={<Gallery />}/>
-                <Route path='/Delivery' element={<Delivery />}/>
-                <Route path='/Contacts' element={<Contacts />}/>
-                <Route path='/Login' element={<Login />} />
-                <Route path='/Signup' element={<Signup />} />
+                <Route path='/location' element={<Location />}/>
+                <Route path='/gallery' element={<Gallery />}/>
+                <Route path='/delivery' element={<Delivery />}/>
+                <Route path='/contacts' element={<Contacts />}/>
+                <Route path='/login' element={<Login />} />
+                <Route path='/signup' element={<Signup />} />
                 <Route path='*' element={<Error />} />
             </Routes> 
         </div>

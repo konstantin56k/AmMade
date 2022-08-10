@@ -11,11 +11,11 @@ function Navbar() {
                 </Link>
             </div>
             <div className="nav_links">
-                <Link className="nav_link" to='/Gallery'><h3>Gallery</h3></Link>
-                <Link className="nav_link" to='/Delivery'><h3>Delivery</h3></Link>
-                <Link className="nav_link" to='/Location'><h3>Location</h3></Link>
-                <Link className="nav_link" to='/Contacts'><h3>Contacts</h3></Link>
-                <Link className="nav_link" to='/Login'><h3>Login / Sign up</h3></Link>
+                <Link className="nav_link" to='/gallery'><h3>Gallery</h3></Link>
+                <Link className="nav_link" to='/delivery'><h3>Delivery</h3></Link>
+                <Link className="nav_link" to='/location'><h3>Location</h3></Link>
+                <Link className="nav_link" to='/contacts'><h3>Contacts</h3></Link>
+                <Link className="nav_link" to='/login'><h3>Login / Sign up</h3></Link>
             </div>
         </div>
     );

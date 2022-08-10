@@ -1,16 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  devServer: {
-    port: 8080,
-    historyApiFallback: true,
-  },
+  watch: true,
   mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
   },
   devtool: 'source-map',
   module: {

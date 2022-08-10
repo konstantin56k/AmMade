@@ -12,7 +12,7 @@ function Login() {
             </form>
             <div className='signup'>
                 <h3>or</h3>
-                <Link className='signup-link' to='/Signup'>Sign up</Link>
+                <Link className='signup-link' to='/signup'>Sign up</Link>
             </div>
         </div>
     )
