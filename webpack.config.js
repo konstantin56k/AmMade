@@ -2,6 +2,10 @@ const path = require('path');
 
 module.exports = {
   watch: true,
+  devServer: {
+    port: 8080,
+    historyApiFallback: true,
+  },
   mode: 'development',
   entry: './src/index.js',
   output: {
